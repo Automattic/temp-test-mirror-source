@@ -23,5 +23,5 @@ jobs:
         with:
           token: ${{ secrets.API_TOKEN_GITHUB }}
           username: matticbot
-          working-directory: ./packages
+          working-directory: ${{ github.workspace }}/packages
         timeout-minutes: 5  # 2021-01-18: Successful runs seem to take about half a minute.
