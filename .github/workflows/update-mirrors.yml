@@ -13,8 +13,6 @@ jobs:
     # Not setting a job-level timeout because it would be kind of pointless with the blocking step. Set a step timeout for all other steps instead.
     steps:
       - uses: actions/checkout@v2
-      # -name: Copy file
-      #  run: cp .nvmrc ./packages/Automattic/temp-test-mirror-source
       - name: Echo workspace
         run: echo "$GITHUB_WORKSPACE"
 
